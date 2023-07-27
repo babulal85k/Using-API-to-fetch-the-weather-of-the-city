@@ -33,6 +33,8 @@ def get_temperature(api_key, city_name):
 
 # Example usage:
 if __name__ == "__main__":
-    api_key = "9ebdbfcb3cdd54486ca7d520101f6290"  # Replace with your actual API key
-    city_name = input("Enter the city name: ")
-    get_temperature(api_key, city_name)
+    api_key = input("Enter the api key: ")  # Replace with your actual API key
+    while True:
+        print("Press ctrl^c to quit the programm")
+        city_name = input("Enter the city name: ")
+        get_temperature(api_key, city_name)
